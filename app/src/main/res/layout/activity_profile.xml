@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.siemens.android.calculateurautonomie.RegisterActivity">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/modifier_mes_infos" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/modif_prenom_nom"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/modif_mail"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <EditText
+        android:id="@+id/mdp"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/modif_mdp"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dip"
+        android:background="@color/btn_logut_bg"
+        android:text="@string/btn_sauvegarder"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/btn_supprimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@color/btn_logut_bg"
+        android:text="@string/suppr_compte"
+        android:textColor="@color/white" />
+</LinearLayout>

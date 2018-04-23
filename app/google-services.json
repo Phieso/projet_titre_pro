@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "316347442942",
+    "firebase_url": "https://calculateur-autonomie.firebaseio.com",
+    "project_id": "calculateur-autonomie",
+    "storage_bucket": "calculateur-autonomie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316347442942:android:7429141df16ff4f8",
+        "android_client_info": {
+          "package_name": "com.siemens.android.calculateurautonomie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316347442942-e9otlij7vmb31qh0hltp7qvk1ut031th.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.siemens.android.calculateurautonomie",
+            "certificate_hash": "45f61ff225e742fc7ba5fe45d2aeed8670cd8771"
+          }
+        },
+        {
+          "client_id": "316347442942-13soposa4cj473pqvb8emijruajonc9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRwCnlCQhtwdESeTfo9X7m5rAOI47QVLE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316347442942-13soposa4cj473pqvb8emijruajonc9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

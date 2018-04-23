@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/titre_systeme1"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/consigne_systeme" />
+
+    <EditText
+        android:id="@+id/I_veille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/I_veille_systeme"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/I_alarme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/I_alarme_systeme"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/T_veille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/T_veille_systeme1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/T_alarme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/T_alarme_systeme1"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_calculer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_logut_bg"
+        android:text="@string/calculer_systeme"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/resultat_systeme"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_sauvegarder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_logut_bg"
+        android:text="@string/sauvegarder_systeme"
+        android:textColor="@color/white" />
+
+</LinearLayout>

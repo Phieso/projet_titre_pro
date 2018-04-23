@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Calculateur Autonomie</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_name">Prénom Nom</string>
+    <string name="btn_login">CONNEXION</string>
+    <string name="btn_register">CREER MON COMPTE</string>
+    <string name="btn_link_to_register">Nouvel utilisateur ? Je crée mon compte.</string>
+    <string name="btn_link_to_login">J\'ai déjà un compte, je me connecte.</string>
+    <string name="welcome">Bonjour</string>
+    <string name="btn_logout">DECONNEXION</string>
+    <string name="name">Fullname</string>
+
+    <string name="historique">Historique des résultats</string>
+    <string name="rechercher_par_date">Rechercher par date</string>
+    <string name="date_debut_hint">Date de début</string>
+    <string name="date_fin_hint">Date de fin</string>
+    <string name="btn_rechercher">RECHERCHER</string>
+
+    <string name="modifier_mes_infos">Modifier mes informations</string>
+    <string name="modif_prenom_nom">Prénom Nom</string>
+    <string name="modif_mail">Email</string>
+    <string name="modif_mdp">Mot de passe</string>
+    <string name="btn_sauvegarder">SAUVEGARDER</string>
+    <string name="suppr_compte">SUPPRIMER MON COMPTE</string>
+
+    <string name="titre_systeme1">ECS – EAE – UGA – DECT</string>
+    <string name="consigne_systeme">Veuillez entrer les mesures relevées sur site</string>
+    <string name="I_veille_systeme">I veille (A)</string>
+    <string name="I_alarme_systeme">I alarme (A)</string>
+    <string name="T_veille_systeme1">T veille (en heures) typique 12h</string>
+    <string name="T_alarme_systeme1">T alarme (en minutes) minimum 10</string>
+    <string name="calculer_systeme">CALCULER</string>
+    <string name="resultat_systeme">Capacité mini calculée suivant relevé</string>
+    <string name="sauvegarder_systeme">Sauvegarder résultat</string>
+
+    <string name="titre_systeme2">SMSI sans délestage - AES</string>
+
+    <string name="titre_systeme3">SMSI avec délestage</string>
+    <string name="I_delestage_systeme3">I délestage (A)</string>
+    <string name="T_delestage_systeme3">T délestage (en minutes)</string>
+
+    <string name="titre_systeme4">AES 230V pour UAE</string>
+
+    <string name="btn_calcul_autonomie">Calcul d\'autonomie</string>
+    <string name="btn_histo_resultats">Historique des résultats</string>
+    <string name="btn_mon_compte">Mon compte</string>
+
+    <string name="consigne_choix_systeme">Veuillez sélectionner un système</string>
+
+    <string name="croix">Croix</string>
+    <string name="btn_info">Bouton info</string>
+
+    <string name="msg_info1">Ce choix concerne :
+
+• Les ECS : équipement de contrôle et de signalisation
+CS1140, FC20, BC11, …
+• Les EAE : équipement d’alimentation électrique ; voir
+AA76
+Alimentation pour Titanus Prosens, Topsens, alimentation
+pour tableau report d’exploitation FT1001-A1 sur SDI,
+alimentation pour interface FDCIO223, …
+• Les UGA : Unité de gestion d’Alarme
+Alimentation de l’UGA20, alimentation de l’UGA sur la
+BC11, …
+• Les DECT : dispositif électrique de contrôle et de
+temporisation XC10, …
+
+Formule de calcul appliquée :
+Autonomie (Ah) = [(I veille)^n x T veille + (I alarme)^n x T alarme] x 1.25</string>
+
+    <string name="msg_info2">Ce choix concerne :
+
+• Les SMSI sans délestage :
+Alimentation pour MC20, RCB11, pour tableau report d’exploitation FT1001-A1 sur SMSI, AES11 sur STT11
+• Les AES : alimentation électrique de sécurité ; voir AA76 Alimentation externe pour DAS raccordé sur MEA11-2, …
+
+Formule de calcul appliquée :
+Autonomie (Ah) = [(I veille)^n x 12h + (I alarme)^n x 1h] x 1.25</string>
+
+    <string name="msg_info3">Ce choix concerne :
+
+• Les SMSI avec délestage :
+Alimentation pour MD20, RCB2404, STT10, STT1120B, ….
+
+Formule de calcul appliquée :
+Autonomie (Ah) = [(I veille)^n x temps avant délestage + (Idélestage)^n x (12h - temps de délestage) + (Ialarme)^n x 1h] x 1.25</string>
+
+    <string name="msg_info4">Ce choix concerne :
+
+• Les AES 230V pour les UAE
+
+Formule de calcul appliquée :
+Autonomie (Ah) = [(I veille)^n x 1h] x 1.25</string>
+
+    <string name="successful_registration">
+        Votre compte a été crée avec succès !
+    </string>
+
+    <string name="sauvegarde_resultat">
+        Le résultat a bien été sauvegardé.
+    </string>
+</resources>
