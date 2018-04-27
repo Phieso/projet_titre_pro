@@ -14,9 +14,17 @@
 
     <string name="historique">Historique des résultats</string>
     <string name="rechercher_par_date">Rechercher par date</string>
+    <string name="rechercher_par_systeme">Rechercher par système</string>
     <string name="date_debut_hint">Date de début</string>
     <string name="date_fin_hint">Date de fin</string>
     <string name="btn_rechercher">RECHERCHER</string>
+
+    <string-array name="systems_array">
+        <item>ECS – EAE – UGA – DECT</item>
+        <item>SMSI sans délestage - AES</item>
+        <item>SMSI avec délestage</item>
+        <item>AES 230V pour UAE</item>
+    </string-array>
 
     <string name="modifier_mes_infos">Modifier mes informations</string>
     <string name="modif_prenom_nom">Prénom Nom</string>

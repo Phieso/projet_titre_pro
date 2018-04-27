@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        android:text="@string/modifier_mes_infos" />
+        android:text="@string/modifier_mes_infos"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/nom"
@@ -46,11 +48,12 @@
         tools:layout_editor_absoluteY="304dp" />
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_sauvegarder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dip"
+        android:layout_marginBottom="20dp"
         android:background="@color/btn_logut_bg"
         android:text="@string/btn_sauvegarder"
         android:textColor="@color/white"

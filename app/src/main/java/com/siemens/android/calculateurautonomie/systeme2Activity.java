@@ -14,6 +14,8 @@ public class systeme2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_systeme2);
 
+        final GetterSetter_systeme2 donnees = new GetterSetter_systeme2();
+        final TextView Systeme = findViewById(R.id.titre);
         final EditText I_veille = findViewById(R.id.I_veille);
         final EditText I_alarme = findViewById(R.id.I_alarme);
 
@@ -24,20 +26,19 @@ public class systeme2Activity extends AppCompatActivity {
         btn_calculer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String I_veille_str = I_veille.getText().toString(); // on récupère le texte entré dans le champ I_veille
-                double I_veille_value = Double.valueOf(I_veille_str); // on le convertit en double
+                donnees.setSystem(Systeme.getText().toString());
+                donnees.setI_veille(Float.parseFloat(I_veille.getText().toString())); // on récupère le texte entré dans le champ I_veille
 
-                String I_alarme_str = I_alarme.getText().toString();
-                double I_alarme_value = Double.valueOf(I_alarme_str);
+                donnees.setI_alarme(Float.parseFloat(I_alarme.getText().toString()));
 
                 double n; // n coefficient de peukert appliqué dans la formule de calcul
-                if (I_veille_value <= 1 && I_alarme_value <= 1) {
+                if (donnees.getI_veille()<= 1 && donnees.getI_alarme() <= 1) {
                     n = 1;
                 } else {
                     n = 1.22;
                 }
 
-                double result = ((Math.pow(I_veille_value, n))* 12 + (Math.pow(I_alarme_value, n)) * 1) * 1.25;
+                double result = ((Math.pow(donnees.getI_veille(), n))* 12 + (Math.pow(donnees.getI_alarme(), n)) * 1) * 1.25;
                 resultat.setText("Autonomie = " + String.valueOf(result) + " Ah", EditText.BufferType.NORMAL);
                 // conversion du résultat en string pour l'afficher dans le textView resultat
             }

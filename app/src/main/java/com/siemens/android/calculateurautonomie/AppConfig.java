@@ -59,4 +59,8 @@ public class AppConfig {
 
     // Server user register url
     public static String URL_REGISTER = "http://192.168.0.16:80/android_login_api/register.php";
+
+    // Server save entry system 1 url
+    public static String URL_STORE_RESULT1 = "http://192.168.0.16:80/android_login_api/systeme1/sauvegarde_resultats1.php";
+
 }

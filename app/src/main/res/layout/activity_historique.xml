@@ -8,10 +8,6 @@
     android:orientation="vertical"
     tools:context=".historiqueActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,14 +20,35 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/historique" />
+                android:text="@string/historique"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/instruction_systeme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="15dp"
+                android:text="@string/rechercher_par_systeme"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="start"
+                android:entries="@array/systems_array" />
 
             <TextView
                 android:id="@+id/instruction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:text="@string/rechercher_par_date" />
+                android:layout_gravity="start"
+                android:layout_marginBottom="10dp"
+                android:text="@string/rechercher_par_date"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,7 +85,7 @@
                 android:background="@color/btn_logut_bg"
                 android:text="@string/btn_rechercher"
                 android:textColor="@color/white" />
+
         </LinearLayout>
-    </ScrollView>
 
 </LinearLayout>
